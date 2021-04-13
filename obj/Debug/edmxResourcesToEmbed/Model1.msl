@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PersonalTrainerManagementModelStoreContainer" CdmEntityContainer="PersonalTrainerManagementEntities5">
+    <EntitySetMapping Name="ClientDatas">
+      <EntityTypeMapping TypeName="PersonalTrainerManagementModel.ClientData">
+        <MappingFragment StoreEntitySet="ClientData">
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="StartingWeight" ColumnName="StartingWeight" />
+          <ScalarProperty Name="CurrentWeight" ColumnName="CurrentWeight" />
+          <ScalarProperty Name="TotalWeightLost" ColumnName="TotalWeightLost" />
+          <ScalarProperty Name="ChestMeasurement" ColumnName="ChestMeasurement" />
+          <ScalarProperty Name="WaistMeasurement" ColumnName="WaistMeasurement" />
+          <ScalarProperty Name="HipMeasurement" ColumnName="HipMeasurement" />
+          <ScalarProperty Name="ArmMeasurement" ColumnName="ArmMeasurement" />
+          <ScalarProperty Name="ThighMeasurement" ColumnName="ThighMeasurement" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="BestPhone" ColumnName="BestPhone" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="FirstAppointment" ColumnName="FirstAppointment" />
+          <ScalarProperty Name="NextAppointment" ColumnName="NextAppointment" />
+          <ScalarProperty Name="Workout_Plan" ColumnName="Workout Plan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="logins">
+      <EntityTypeMapping TypeName="PersonalTrainerManagementModel.login">
+        <MappingFragment StoreEntitySet="login">
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

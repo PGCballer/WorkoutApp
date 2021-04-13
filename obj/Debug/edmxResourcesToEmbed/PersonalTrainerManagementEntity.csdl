@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PersonalTrainerManagementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ClientData">
+    <Key>
+      <PropertyRef Name="ClientID" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="DateOfBirth" />
+      <PropertyRef Name="Gender" />
+      <PropertyRef Name="StartingWeight" />
+      <PropertyRef Name="CurrentWeight" />
+      <PropertyRef Name="TotalWeightLost" />
+      <PropertyRef Name="ChestMeasurement" />
+      <PropertyRef Name="WaistMeasurement" />
+      <PropertyRef Name="HipMeasurement" />
+      <PropertyRef Name="ArmMeasurement" />
+      <PropertyRef Name="ThighMeasurement" />
+      <PropertyRef Name="Address" />
+      <PropertyRef Name="City" />
+      <PropertyRef Name="State" />
+      <PropertyRef Name="ZipCode" />
+      <PropertyRef Name="BestPhone" />
+      <PropertyRef Name="EmailAddress" />
+      <PropertyRef Name="FirstAppointment" />
+      <PropertyRef Name="NextAppointment" />
+      <PropertyRef Name="Workout_Plan" />
+    </Key>
+    <Property Name="ClientID" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DateOfBirth" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StartingWeight" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="CurrentWeight" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="TotalWeightLost" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ChestMeasurement" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="WaistMeasurement" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="HipMeasurement" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ArmMeasurement" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ThighMeasurement" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ZipCode" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="BestPhone" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FirstAppointment" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NextAppointment" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Workout_Plan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PersonalTrainerManagementEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ClientDatas" EntityType="Self.ClientData" />
+  </EntityContainer>
+</Schema>

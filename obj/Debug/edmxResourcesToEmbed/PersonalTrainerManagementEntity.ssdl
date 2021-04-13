@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PersonalTrainerManagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'PersonalTrainerManagement.dbo.ClientData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ClientData">
+    <Key>
+      <PropertyRef Name="ClientID" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="DateOfBirth" />
+      <PropertyRef Name="Gender" />
+      <PropertyRef Name="StartingWeight" />
+      <PropertyRef Name="CurrentWeight" />
+      <PropertyRef Name="TotalWeightLost" />
+      <PropertyRef Name="ChestMeasurement" />
+      <PropertyRef Name="WaistMeasurement" />
+      <PropertyRef Name="HipMeasurement" />
+      <PropertyRef Name="ArmMeasurement" />
+      <PropertyRef Name="ThighMeasurement" />
+      <PropertyRef Name="Address" />
+      <PropertyRef Name="City" />
+      <PropertyRef Name="State" />
+      <PropertyRef Name="ZipCode" />
+      <PropertyRef Name="BestPhone" />
+      <PropertyRef Name="EmailAddress" />
+      <PropertyRef Name="FirstAppointment" />
+      <PropertyRef Name="NextAppointment" />
+      <PropertyRef Name="Workout Plan" />
+    </Key>
+    <Property Name="ClientID" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateOfBirth" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="StartingWeight" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="CurrentWeight" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="TotalWeightLost" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ChestMeasurement" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="WaistMeasurement" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="HipMeasurement" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ArmMeasurement" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ThighMeasurement" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="State" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ZipCode" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="BestPhone" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="EmailAddress" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FirstAppointment" Type="smalldatetime" Nullable="false" />
+    <Property Name="NextAppointment" Type="smalldatetime" Nullable="false" />
+    <Property Name="Workout Plan" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'PersonalTrainerManagement.dbo.Login' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Login">
+          <Property Name="username" Type="nvarchar" MaxLength="50" />
+          <Property Name="password" Type="nvarchar" MaxLength="50" />
+        </EntityType>-->
+  <EntityContainer Name="PersonalTrainerManagementModelStoreContainer">
+    <EntitySet Name="ClientData" EntityType="Self.ClientData" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ClientData].[ClientID] AS [ClientID], 
+    [ClientData].[FirstName] AS [FirstName], 
+    [ClientData].[LastName] AS [LastName], 
+    [ClientData].[DateOfBirth] AS [DateOfBirth], 
+    [ClientData].[Gender] AS [Gender], 
+    [ClientData].[StartingWeight] AS [StartingWeight], 
+    [ClientData].[CurrentWeight] AS [CurrentWeight], 
+    [ClientData].[TotalWeightLost] AS [TotalWeightLost], 
+    [ClientData].[ChestMeasurement] AS [ChestMeasurement], 
+    [ClientData].[WaistMeasurement] AS [WaistMeasurement], 
+    [ClientData].[HipMeasurement] AS [HipMeasurement], 
+    [ClientData].[ArmMeasurement] AS [ArmMeasurement], 
+    [ClientData].[ThighMeasurement] AS [ThighMeasurement], 
+    [ClientData].[Address] AS [Address], 
+    [ClientData].[City] AS [City], 
+    [ClientData].[State] AS [State], 
+    [ClientData].[ZipCode] AS [ZipCode], 
+    [ClientData].[BestPhone] AS [BestPhone], 
+    [ClientData].[EmailAddress] AS [EmailAddress], 
+    [ClientData].[FirstAppointment] AS [FirstAppointment], 
+    [ClientData].[NextAppointment] AS [NextAppointment], 
+    [ClientData].[Workout Plan] AS [Workout Plan]
+    FROM [dbo].[ClientData] AS [ClientData]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
